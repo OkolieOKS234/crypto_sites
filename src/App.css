@@ -8,7 +8,7 @@
 }
 }
 @media only screen and (max-width: 996px) {
-  .container{
+  .container, .sites{
     flex-wrap: wrap;
   }
   .hero_header{
@@ -16,7 +16,7 @@
   }
 }
 @media only screen and (max-width: 360px) {
-  .container{
+  .container, .sites{
     flex-wrap: wrap;
   }
   .hero_header{

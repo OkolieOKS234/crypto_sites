@@ -18,42 +18,47 @@ export default function Sites() {
   
 
   return (
-    <div>
+    <div className='bg-[#0D0D2B] '>
   <Tabs>
-    <TabList className="bg-blue-700 text-white font-bold font-serif text-2xl">
+    <TabList className="bg-[#0D0D2B]  text-white font-bold font-serif text-2xl">
       <Tab>Faucets</Tab>
       <Tab>Investments</Tab>
       <Tab>Gaming</Tab>
     </TabList>
 
     <TabPanel>
-        <Reveal>
-            <div className='flex gap-3 py-3'>
+      
+            <div className=' sites flex gap-6 py-3'>
                 {/* First Card */}
-        <div className='shadow-lg py-3 hover:scale-110'>
+                <Reveal>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110'>
             <div >
             <img src={CryptowinImage} alt=""  className=' w-96'/>
-            <h3 className='text-2xl '>Cryptowin</h3>
+            <h3 className='text-2xl text-white text-center '>Cryptowin</h3>
             </div>
             </div>
+            </Reveal>
             {/* Second Card */}
-            <div className='shadow-lg py-3 hover:scale-110'>
+            <Reveal>
+            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-110'>
             <div >
             <img src={EarnCrypto} alt=""  className=' w-96'/>
-            <h3 className='text-2xl '>EarnCrypto</h3>
+            <h3 className='text-2xl text-white text-center'>EarnCrypto</h3>
             </div>
             </div>
+            </Reveal>
             {/* Third */}
-            <div className='shadow-lg py-3'>
-            <div className='hover:scale-110'>
+            <Reveal>
+            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-110'>
+            <div>
             <img src={CryptoFlare} alt=""  className=' w-96'/>
-            <h3 className='text-2xl '>EarnCrypto</h3>
+            <h3 className='text-2xl text-center text-white '>Cryptoflare</h3>
             </div>
             </div>
+            </Reveal>
 
         </div>
-        </Reveal>
-     
+        
     </TabPanel>
     <TabPanel>
       <h2>Any content 2</h2>

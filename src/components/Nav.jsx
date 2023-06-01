@@ -13,7 +13,7 @@ let Links =[
   ];
 
 
-let [open, setOpen] = useState("true");
+let [open, setOpen] = useState(false);
 
   return (
     <div className='shadow-sm w-full  top-0 left-0 '>
