@@ -120,6 +120,11 @@ export default function Sites() {
         </div>
         
     </TabPanel>
+   
+    <TabPanel>
+      <h2>Any content 2</h2>
+    </TabPanel>
+
     <TabPanel>
       <h2>Any content 2</h2>
     </TabPanel>

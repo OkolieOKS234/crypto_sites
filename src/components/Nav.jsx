@@ -6,10 +6,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 function Nav() {
 // Links
 let Links =[
-    {name:"Home",link:"#"},
-    {name:"Faucets",link:"#footer"},
-    {name:"Gigs",link:"#section"},  
-    {name:"Payment Proofs",link:"#section"},  
+    {key: 1,name:"Home",link:"#"},
+    {key: 2,name:"Faucets",link:"#footer"},
+    {key:3, name:"Gigs",link:"#section"},  
+    {key:4, name:"Payment Proofs",link:"#section"},  
   ];
 
 
@@ -33,7 +33,7 @@ let [open, setOpen] = useState(false);
         {
           Links.map((link)=>(
             
-            <ul key={link.name} to={link.link} className=' cursor-pointer md:ml-8 text-xl md:my-0 my-7 text-white' smooth >
+            <ul key={link.key} to={link.link} className=' cursor-pointer md:ml-8 text-xl md:my-0 my-7 text-white' smooth >
               <li className='text-white  hover:text-gray-400 duration-500 cursor-pointer'>{link.name}</li>
             </ul>
           ))
