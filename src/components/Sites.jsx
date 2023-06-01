@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import CryptowinImage from "../assets/cryptowin.png"
 import EarnCrypto from "../assets/earncrypto.png"
 import CryptoFlare from "../assets/cryptoflare.png"
-import Coinpayu from "../assets/coinpayu.png"
+// import Coinpayu from "../assets/coinpayu.png"
 import {Bounce, Reveal } from "react-awesome-reveal";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -97,7 +97,7 @@ export default function Sites() {
 <Reveal>
             <div className='bg-slate-950 shadow-lg pb-3 hover:scale-110'>
             <div>
-            <img src={Coinpayu} alt=""  className=' w-96'/>
+            <img src={CryptoFlare} alt=""  className=' w-96'/>
             <h3 className='text-2xl text-center text-white '>Cryptoflare</h3>
             <ul className='text-white list-none text-center'>
               <li className='list-inside flex mx-12' >Claim every 0 minutes</li>
