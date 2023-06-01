@@ -1,3 +1,21 @@
+.tab{
+  background-color: rgba(255,255,255,0.1);
+  text-align: center;
+}
+.tab:focus{
+  background-color: red;
+}
+
+/* Sites List items */
+.list-inside::before {
+  content: "✅";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 286px){
 .container{
