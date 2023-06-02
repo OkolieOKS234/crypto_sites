@@ -21,7 +21,7 @@ export default function Sites() {
   return (
     <div className='bg-[#0D0D2B]'>
   <Tabs>
-    <TabList className="tab    text-white font-bold font-serif text-2xl">
+    <TabList className="tab text-white font-bold font-serif text-2xl">
       <Tab>Faucets</Tab>
       <Tab>Investments</Tab>
       <Tab>Gaming</Tab>
@@ -29,10 +29,10 @@ export default function Sites() {
 
     <TabPanel>
       
-            <div className='mx-9 sites flex flex-wrap gap-4 py-3'>
+            <div className='mx-9 sites flex flex-wrap gap-6 py-12'>
                 {/* First Card */}
-                <Reveal>
-        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110'>
+                <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-105'>
             <div >
             <img src={CryptowinImage} alt=""  className=' w-96'/>
             <h3 className='text-2xl text-white text-center '>Cryptowin</h3>
@@ -52,8 +52,8 @@ export default function Sites() {
             </div>
             </Reveal>
             {/* Second Card */}
-            <Reveal>
-            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-110'>
+            <Reveal triggerOnce={true}>
+            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-105'>
             <div >
             <img src={EarnCrypto} alt=""  className=' w-96'/>
             <h3 className='text-2xl text-white text-center'>EarnCrypto</h3>
@@ -73,8 +73,8 @@ export default function Sites() {
             </div>
             </Reveal>
             {/* Third */}
-            <Reveal>
-            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-110'>
+            <Reveal triggerOnce={true}>
+            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-105'>
             <div>
             <img src={CryptoFlare} alt=""  className=' w-96'/>
             <h3 className='text-2xl text-center text-white '>Cryptoflare</h3>
@@ -94,8 +94,8 @@ export default function Sites() {
             </div>
             </Reveal>
 {/* Fourth */}
-<Reveal>
-            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-110'>
+<Reveal triggerOnce={true}>
+            <div className='bg-slate-950 shadow-lg pb-3 hover:scale-105'>
             <div>
             <img src={CryptoFlare} alt=""  className=' w-96'/>
             <h3 className='text-2xl text-center text-white '>Cryptoflare</h3>
