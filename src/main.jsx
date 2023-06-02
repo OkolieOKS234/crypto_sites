@@ -8,7 +8,7 @@ import Snowfall from 'react-snowfall'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <Snowfall
-     snowflakeCount={200}
+     snowflakeCount={50}
      />
     <App />
   </React.StrictMode>,

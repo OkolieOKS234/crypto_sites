@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+html, body{
+  overflow-x: hidden;
+}
+.hero_header.header_text{
+  font-family: 'Rubik Dirt', cursive;
+}
+
+
 .tab{
   background-color: rgba(255,255,255,0.1);
   text-align: center;
-}
-.tab:focus{
-  background-color: red;
 }
 
 /* Sites List items */
@@ -26,7 +32,7 @@
 }
 }
 @media only screen and (max-width: 996px) {
-  .container, .sites{
+  .container, .sites, .features{
     flex-wrap: wrap;
   }
   .hero_header{
@@ -38,6 +44,6 @@
     flex-wrap: wrap;
   }
   .hero_header{
-   padding:0px;
+   padding:10px;
   }
 }

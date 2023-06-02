@@ -125,7 +125,7 @@ export default function Sites() {
     </TabPanel>
    
     <TabPanel>
-      <h2>Any content 2</h2>
+      <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam odit rem. Recusandae, quo ab ipsam at velit earum quasi eveniet nostrum fuga atque alias laboriosam reprehenderit optio veniam quae.</h2>
     </TabPanel>
 
     <TabPanel>

@@ -2,6 +2,7 @@
 import './App.css'
 import Hero from './components/Hero'
 import Nav from './components/Nav'
+import Section from './components/Section'
 import Sites from './components/Sites'
 function App() {
  
@@ -10,6 +11,7 @@ function App() {
     <>
    <Nav/>
    <Hero/>
+   <Section/>
 <Sites/>
     </>
   )
