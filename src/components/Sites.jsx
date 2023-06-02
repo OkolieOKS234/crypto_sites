@@ -25,6 +25,9 @@ export default function Sites() {
       <Tab>Faucets</Tab>
       <Tab>Investments</Tab>
       <Tab>Gaming</Tab>
+      <Tab>Airdrops</Tab>
+      <Tab>Exchanges</Tab>
+      <Tab>Tutorials</Tab>
     </TabList>
 
     <TabPanel>
@@ -127,6 +130,15 @@ export default function Sites() {
 
     <TabPanel>
       <h2>Any content 2</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Airdrops</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Exchanges</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Tutorials</h2>
     </TabPanel>
   </Tabs>
 
