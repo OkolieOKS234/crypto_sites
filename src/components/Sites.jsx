@@ -32,7 +32,7 @@ export default function Sites() {
 
     <TabPanel>
       
-            <div className='mx-9 sites flex flex-wrap gap-6 py-12'>
+            <div className='mx-9 sites flex flex-wrap gap-6 py-12 justify-center items-center'>
                 {/* First Card */}
                 <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-105'>
