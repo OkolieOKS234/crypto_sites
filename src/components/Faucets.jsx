@@ -4,9 +4,9 @@ import EarnCrypto from "../assets/earncrypto.png";
 import CryptoFlare from "../assets/cryptoflare.png";
 // import Coinpayu from "../assets/coinpayu.png";
 // import Viefaucet from "../assets/viefaucet.png";
-import Coinpayz from "../assets/coinpayz.png"
-import Coinpot from "../assets/coinpot.png";
-import Bithub from "../assets/bithub.png"
+// import Coinpayz from "../assets/coinpayz.png"
+// import Coinpot from "../assets/coinpot.png";
+// import Bithub from "../assets/bithub.png"
 import { Bounce, Reveal, Flip } from "react-awesome-reveal";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -192,7 +192,7 @@ const Faucets = () => {
             <Reveal triggerOnce={true}>
               <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
                 <div>
-                  <img src={Coinpot} alt="" className=" w-96 h-64" />
+                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
                   <h3 className="text-2xl text-center text-white ">Coinpot</h3>
                   <ul className="text-white list-none text-center">
                     <li className="list-inside flex mx-12">
@@ -225,7 +225,7 @@ const Faucets = () => {
 <Reveal triggerOnce={true}>
               <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
                 <div>
-                  <img src={Bithub} alt="" className=" w-96 h-64" />
+                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
                   <h3 className="text-2xl text-center text-white ">Bithub</h3>
                   <ul className="text-white list-none text-center">
                     <li className="list-inside flex mx-12">
@@ -258,7 +258,7 @@ const Faucets = () => {
 <Reveal triggerOnce={true}>
               <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
                 <div>
-                  <img src={Coinpayz} alt="" className=" w-96 h-64" />
+                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
                   <h3 className="text-2xl text-center text-white ">Bithub</h3>
                   <ul className="text-white list-none text-center">
                     <li className="list-inside flex mx-12">
