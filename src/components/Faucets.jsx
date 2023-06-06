@@ -3,7 +3,7 @@ import CryptowinImage from "../assets/cryptowin.png";
 import EarnCrypto from "../assets/earncrypto.png";
 import CryptoFlare from "../assets/cryptoflare.png";
 // import Coinpayu from "../assets/coinpayu.png";
-import Viefaucet from "../assets/viefaucet.png";
+// import Viefaucet from "../assets/viefaucet.png";
 import Coinpayz from "../assets/coinpayz.png"
 import Coinpot from "../assets/coinpot.png";
 import Bithub from "../assets/bithub.png"
@@ -88,7 +88,7 @@ const Faucets = () => {
             <Reveal triggerOnce={true}>
               <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
                 <div>
-                  <img src={Viefaucet} alt="" className=" w-96 h-64" />
+                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
                   <h3 className="text-2xl text-center text-white ">
                     Viefaucet
                   </h3>
