@@ -158,7 +158,7 @@ const Faucets = () => {
             <Reveal triggerOnce={true}>
               <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
                 <div>
-                  <img src={Cryptoflare} alt="" className=" w-96 h-64" />
+                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
                   <h3 className="text-2xl text-center text-white ">Cryptoflare</h3>
                   <ul className="text-white list-none text-center">
                     <li className="list-inside flex mx-12">
