@@ -1,9 +1,19 @@
 import React from 'react'
 import {Reveal } from "react-awesome-reveal";
-import Cryptoflare from "../assets/sites/cryptoflare.jpg"
 import Coinpayu from "../assets/sites/coinpayu.jpg"
 import Earnviv from "../assets/sites/earnviv.jpg"
-import EarnBitMoon from "../assets/sites/viefaucet.jpg"
+import VieFaucet from "../assets/sites/viefaucet.jpg"
+import AdDoge from "../assets/sites/ad-doge.jpg"
+import Cryptoflare from "../assets/sites/cryptoflare.jpg"
+import Coinpayz from "../assets/sites/coinpayz.jpg"
+import EarnCrypto from "../assets/sites/earncrypto.jpg"
+import Dutchy from "../assets/sites/dutchycorp.jpg"
+import Faucet4u from "../assets/sites/faucet4u.jpg"
+import Claimbits from "../assets/sites/claimbits.jpg"
+import BtcAdSpace from "../assets/sites/btcadspace.jpg"
+import FaucetCrypto from "../assets/sites/faucetcrypto.jpg"
+import AdBtc from "../assets/sites/adbtc.jpg"
+
 import { useState, useEffect, useRef } from 'react';
 import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -131,7 +141,7 @@ const updateSlides = () => {
 <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={Earnviv} alt=""  className=' w-56 m-auto object-contain shadow-2xl shadow-red-600 pt-6'/>
+            <img src={Earnviv} alt=""  className=' w-56 m-auto object-contain shadow-2xl shadow-black pt-6'/>
             <h3 className='text-2xl text-white text-center '>Earnviv</h3>
             <ul className='text-white list-none text-center'>
               <li className='list-inside flex mx-12' >Earn by playing games</li>
@@ -154,8 +164,8 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Viefaucet</h3>
+            <img src={Dutchy} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Dutchy Corp</h3>
             <ul className='text-white list-none text-center'>
               <li className='list-inside flex mx-12' >Claim every 4 minutes</li>
               <li className='list-inside flex mx-12'>Earn passive income</li>
@@ -177,11 +187,11 @@ const updateSlides = () => {
 <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]'>
-            <img src={Coinpayu} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6'/>
-            <h3 className='text-2xl text-white text-center '>Cryptowin</h3>
+            <img src={AdDoge} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-blue-600'/>
+            <h3 className='text-2xl text-white text-center '>Ad-doge</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 10 minutes</li>
+              <li className='list-inside flex mx-12'>Earn by reading articles</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -200,7 +210,7 @@ const updateSlides = () => {
 <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={Coinpayu} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6'/>
+            <img src={Coinpayu} alt=""  className=' w-56 m-auto object-contain shadow-2xl shadow-orange-600 pt-6'/>
             <h3 className='text-2xl text-white text-center '>Cryptowin</h3>
             <ul className='text-white list-none text-center'>
               <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
@@ -223,11 +233,11 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={EarnCrypto} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-white'/>
+            <h3 className='text-2xl text-white text-center '>Earn Crypto</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 10 seconds</li>
+              <li className='list-inside flex mx-12'>Earn from shortlinks</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -246,11 +256,11 @@ const updateSlides = () => {
 <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={Faucet4u} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-green-600'/>
+            <h3 className='text-2xl text-white text-center '>Faucet4u</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 60 minutes</li>
+              <li className='list-inside flex mx-12'>1% level bonus</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -269,11 +279,11 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={Claimbits} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-orange-600'/>
+            <h3 className='text-2xl text-white text-center '>Claimbits</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 5 minutes</li>
+              <li className='list-inside flex mx-12'>Earn from shortlinks</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -292,11 +302,11 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={Coinpayz} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Coinpayz</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 5 minutes</li>
+              <li className='list-inside flex mx-12'>Earn from daily check-in</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -315,10 +325,10 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={BtcAdSpace} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-blue-600'/>
+            <h3 className='text-2xl text-white text-center '>BtcAdSpace</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12' >Claim every 16 minutes</li>
               <li className='list-inside flex mx-12'>Earn passive income</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
@@ -338,11 +348,11 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={FaucetCrypto} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-blue-800'/>
+            <h3 className='text-2xl text-white text-center '>FaucetCrypto</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 30 minutes</li>
+              <li className='list-inside flex mx-12'>Earn from ads</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -361,11 +371,11 @@ const updateSlides = () => {
             <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={AdBtc} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-gray-600'/>
+            <h3 className='text-2xl text-white text-center '>AdBTC</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim from ads often</li>
+              <li className='list-inside flex mx-12'>Earn Rubbles from shortlinks </li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -384,11 +394,11 @@ const updateSlides = () => {
   <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <img src={VieFaucet} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>VieFaucet</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Claim every 4 minutes</li>
+              <li className='list-inside flex mx-12'>Earn from shortlinks</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
