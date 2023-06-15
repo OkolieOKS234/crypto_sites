@@ -1,296 +1,320 @@
 import React from 'react'
-import CryptowinImage from "../assets/cryptowin.png";
-import EarnCrypto from "../assets/earncrypto.png";
-import CryptoFlare from "../assets/cryptoflare.png";
-// import Coinpayu from "../assets/coinpayu.png";
-// import Viefaucet from "../assets/viefaucet.png";
-// import Coinpayz from "../assets/coinpayz.png"
-// import Coinpot from "../assets/coinpot.png";
-// import Bithub from "../assets/bithub.png"
-import { Bounce, Reveal, Flip } from "react-awesome-reveal";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
+import {Reveal } from "react-awesome-reveal";
+import Cryptoflare from "../assets/cryptoflare.png"
+import Coinpayu from "../assets/coinpayu.png"
+import Earnviv from "../assets/earnviv.png"
+import EarnBitMoon from "../assets/earnbitmoon.png"
 
 const Faucets = () => {
   return (
-    <div>
- <div className="mx-9 sites flex flex-wrap gap-6 py-12 justify-center items-center">
-            {/* First Card */}
-            <Reveal triggerOnce={true}>
-              <div className=" bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptowinImage} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-white text-center ">
-                    Cryptowin
-                  </h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 15 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn passive income
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </Reveal>
-            {/* Second Card */}
-            <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={EarnCrypto} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-white text-center">
-                    EarnCrypto
-                  </h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 0 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn from shortlinks
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
+    <>
+<div className='mx-9 sites flex flex-wrap gap-4 py-3'>
+                {/* First Card */}
+                <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={Coinpayu} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Coinpayu</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 60 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
 
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl ">⭐⭐⭐⭐⭐</p>
-                </div>
               </div>
-            </Reveal>
-            {/* Third */}
-            <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-center text-white ">
-                    Viefaucet
-                  </h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 11 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn from reading articles
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        {" "}
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </Reveal>
-            {/* Fourth */}
-            <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-center text-white ">
-                    Cryptoflare
-                  </h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 0 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn from shortlinks
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </Reveal>
-            {/* Fifth */}
-            <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-center text-white ">Cryptoflare</h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 60 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">Earn from ads</li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn by writing articles
-                    </li>
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
             </Reveal>
 
-            {/* Sixth */}
-            <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-center text-white ">Coinpot</h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 5 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">Earn from ads</li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn through offerwalls
-                    </li>
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
-              </div>
-            </Reveal>
-{/* Seventh */}
+            
+{/* Second */}
 <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-center text-white ">Bithub</h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 5 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">Earn from ads</li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn by writing articles
-                    </li>
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={Cryptoflare} alt=""  className=' w-56 m-auto object-contain shadow-2xl shadow-red-600 pt-6'/>
+            <h3 className='text-2xl text-white text-center '>Cryptoflare</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
               </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+{/* Third */}
+<Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={Earnviv} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6'/>
+            <h3 className='text-2xl text-white text-center '>Earnviv</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+            {/* fOURTH */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+{/* Fifth */}
+<Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]'>
+            <img src={Coinpayu} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6'/>
+            <h3 className='text-2xl text-white text-center '>Cryptowin</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+{/* Sixth */}
+<Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={Coinpayu} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6'/>
+            <h3 className='text-2xl text-white text-center '>Cryptowin</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+
+            {/* Seventh */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
             </Reveal>
 {/* Eigth */}
 <Reveal triggerOnce={true}>
-              <div className="bg-slate-950 shadow-lg pb-3 hover:scale-105">
-                <div>
-                  <img src={CryptoFlare} alt="" className=" w-96 h-64" />
-                  <h3 className="text-2xl text-center text-white ">Bithub</h3>
-                  <ul className="text-white list-none text-center">
-                    <li className="list-inside flex mx-12">
-                      Claim every 5 minutes
-                    </li>
-                    <li className="list-inside flex mx-12">Earn from ads</li>
-                    <li className="list-inside flex mx-12">
-                      Direct withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Faucetpay Withdrawal
-                    </li>
-                    <li className="list-inside flex mx-12">
-                      Earn by writing articles
-                    </li>
-                    <div className="flex gap-3 justify-center py-4">
-                      <button className="py-1 px-3 rounded bg-green-500 hover:bg-green-950">
-                        Get Started
-                      </button>
-                      <button className="py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded">
-                        Payment Proof
-                      </button>
-                    </div>
-                  </ul>
-                  <p className="text-center text-3xl">⭐⭐⭐⭐⭐</p>
-                </div>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
               </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
             </Reveal>
 
-          </div>
-        
-    </div>
+            {/* Ninth */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+
+            {/* Tenth */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+
+            {/* Eleventh */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+
+            {/* Twelfth */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+
+            {/* Thirteen */}
+            <Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+{/* 14th */}
+<Reveal triggerOnce={true}>
+        <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
+            <div className='h-[580px] w-[350px]  ' >
+            <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
+            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <ul className='text-white list-none text-center'>
+              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12'>Direct withdrawal</li>
+              <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
+              <div className='flex gap-3 justify-center py-4'>
+              <button className='py-1 px-3 rounded bg-green-500 hover:bg-green-950'>Get Started</button>
+              <button className='py-1 px-3 bg-blue-800 hover:bg-blue-950 rounded'>Payment Proof</button>
+
+              </div>
+            </ul>
+            <p className='text-center text-2xl'>⭐⭐⭐⭐⭐</p>
+            </div>
+            </div>
+            </Reveal>
+
+            </div>
+
+    </>
   )
 }
 
