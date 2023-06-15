@@ -4,7 +4,7 @@ import Cryptoflare from "../assets/sites/cryptoflare.jpg"
 import Coinpayu from "../assets/sites/coinpayu.jpg"
 import Earnviv from "../assets/sites/earnviv.jpg"
 import EarnBitMoon from "../assets/sites/viefaucet.jpg"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -16,6 +16,8 @@ import 'swiper/css/scrollbar';
 const Faucets = () => {
 // Width Checker
 const [slidesPerView, setSlidesPerView] = useState(3);
+const swiperRef = useRef(null);
+SwiperCore.use([Navigation, Pagination, A11y]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,6 +37,30 @@ const [slidesPerView, setSlidesPerView] = useState(3);
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+// update a fresh set of 3
+const updateSlides = () => {
+  if (swiperRef.current) {
+    swiperRef.current;
+  }
+};
+  const handleSlideChange = () => {
+    const slides = swiperRef.current.slides;
+    const activeIndex = swiperRef.current.activeIndex;
+    const numSlides = slides.length;
+
+    const startIndex = activeIndex + numSlides - (numSlides % slidesPerView);
+    const newSlides = [];
+
+    for (let i = 0; i < slidesPerView; i++) {
+      const index = (startIndex + i) % numSlides;
+      newSlides.push(slides[index]);
+    }
+
+    swiperRef.current.slides = newSlides;
+    swiperRef.current.update();
+  };
+
+
 
 
 
@@ -48,8 +74,9 @@ const [slidesPerView, setSlidesPerView] = useState(3);
       slidesPerView={slidesPerView}
       navigation
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      ref={swiperRef}
+      onSlideChange={handleSlideChange}
+      onInit={updateSlides}
     >
 
                 {/* First Card */}
