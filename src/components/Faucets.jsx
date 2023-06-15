@@ -1,9 +1,9 @@
 import React from 'react'
 import {Reveal } from "react-awesome-reveal";
-import Cryptoflare from "../assets/cryptoflare.png"
-import Coinpayu from "../assets/coinpayu.png"
-import Earnviv from "../assets/earnviv.png"
-import EarnBitMoon from "../assets/earnbitmoon.png"
+import Cryptoflare from "../assets/sites/cryptoflare.jpg"
+import Coinpayu from "../assets/sites/coinpayu.jpg"
+import Earnviv from "../assets/sites/earnviv.jpg"
+import EarnBitMoon from "../assets/sites/viefaucet.jpg"
 
 const Faucets = () => {
   return (
@@ -57,11 +57,11 @@ const Faucets = () => {
 <Reveal triggerOnce={true}>
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
-            <img src={Earnviv} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6'/>
+            <img src={Earnviv} alt=""  className=' w-56 m-auto object-contain shadow-2xl shadow-red-600 pt-6'/>
             <h3 className='text-2xl text-white text-center '>Earnviv</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
-              <li className='list-inside flex mx-12'>Earn passive income</li>
+              <li className='list-inside flex mx-12' >Earn by playing games</li>
+              <li className='list-inside flex mx-12'>Earn daily rewards</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
               <div className='flex gap-3 justify-center py-4'>
@@ -79,9 +79,9 @@ const Faucets = () => {
         <div className=' bg-slate-950 shadow-lg pb-3 hover:scale-110 rounded-xl'>
             <div className='h-[580px] w-[350px]  ' >
             <img src={EarnBitMoon} alt=""  className=' w-56 m-auto object-contain shadow-2xl pt-6 shadow-red-600'/>
-            <h3 className='text-2xl text-white text-center '>Earnbitmoon</h3>
+            <h3 className='text-2xl text-white text-center '>Viefaucet</h3>
             <ul className='text-white list-none text-center'>
-              <li className='list-inside flex mx-12' >Claim every 15 minutes</li>
+              <li className='list-inside flex mx-12' >Claim every 4 minutes</li>
               <li className='list-inside flex mx-12'>Earn passive income</li>
               <li className='list-inside flex mx-12'>Direct withdrawal</li>
               <li className='list-inside flex mx-12'>Faucetpay Withdrawal</li>
