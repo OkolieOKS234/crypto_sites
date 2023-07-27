@@ -21,7 +21,7 @@ let [open, setOpen] = useState(false);
     <div className='font-bold bg-[#0D0D2B]  cursor-pointer flex items-center font-[Poppins] 
     text-gray-800'>
       <div className=' mr-1 p-0 m-0 '>
-      <img src={LogoImage} alt="Maro_logo" className='sm:ml-2  md:w-80 sm:w-12 lg:w-full md:ml-2 lg:ml-16'/>
+      <img src={LogoImage} alt="Maro_logo" className='sm:ml-2 md:w-36 sm:w-56 lg:w-full md:ml-2 lg:ml-16'/>
       </div>
      
     </div>
