@@ -9,13 +9,22 @@ const investmentData = [
     },
     {
       index: 2,
-      nameOfSite: "Cryptoflare",
+      nameOfSite: "Coinpayu",
       claimDuration: "5 minutes",
       imageURL: "https://res.cloudinary.com/dsx2yofap/image/upload/v1689979658/cryptoflare_kzxdbf.jpg",
       perks: "Lots of shortlinks",
       withdrawalMethod: "Direct"
       
     },
+    {
+        index: 3,
+        nameOfSite: "Coinpayu",
+        claimDuration: "5 minutes",
+        imageURL: "https://res.cloudinary.com/dsx2yofap/image/upload/v1689979658/cryptoflare_kzxdbf.jpg",
+        perks: "Lots of shortlinks",
+        withdrawalMethod: "Direct"
+        
+      },
   
     // You can add more objects here to simulate more API data
   ];
