@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination,A11y } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,9 +14,9 @@ const Gaming = () => {
     <>
       <Swiper
         // install Swiper modules
-        // modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={2}
+        modules={[Navigation, Pagination,  A11y]}
+        spaceBetween={10}
+        slidesPerView={3}
         navigation
         // pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
@@ -30,10 +30,10 @@ const Gaming = () => {
               alt={data.nameOfSite}
               className='w-72'
             />
-            <h2>{data.nameOfSite}</h2>
-            <p>Claim Duration: {data.claimDuration}</p>
-            <p>Perks: {data.perks}</p>
-            <p>Withdrawal Method: {data.withdrawalMethod}</p>
+            <div className='p-6'>
+            <h2 className=' text-2xl font-extrabold'>{data.nameOfSite}</h2>
+            <p>Description: {data.description}</p>
+            </div>
             </div>
           </SwiperSlide>
         ))}

@@ -10,19 +10,17 @@ const investmentData = [
     {
       index: 2,
       nameOfSite: "Coinpayu",
-      claimDuration: "5 minutes",
+      ROI: "up to 100% per month, but active income",
       imageURL: "https://res.cloudinary.com/dsx2yofap/image/upload/v1689979658/cryptoflare_kzxdbf.jpg",
-      perks: "Lots of shortlinks",
       withdrawalMethod: "Direct"
       
     },
     {
         index: 3,
-        nameOfSite: "Coinpayu",
-        claimDuration: "5 minutes",
+        nameOfSite: "Dutchy",
+        ROI: "up to 38% per year",
         imageURL: "https://res.cloudinary.com/dsx2yofap/image/upload/v1689979658/cryptoflare_kzxdbf.jpg",
-        perks: "Lots of shortlinks",
-        withdrawalMethod: "Direct"
+        withdrawalMethod: "Direct, faucetpay"
         
       },
   

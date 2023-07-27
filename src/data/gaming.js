@@ -28,6 +28,20 @@ description:"The RollerCoin is a blockchain-based game platform that allows play
         description:"Dutchy is a faucet that offers 2000+ games to play and earn."
       },
 
-    // You can add more objects here to simulate more API data
+  
+    {
+      index: 5,
+      nameOfSite: "dutchy",
+      imageURL: "https://res.cloudinary.com/dsx2yofap/image/upload/v1690470926/dutchy_xkj7jf.jpg",
+      description:"Dutchy is a faucet that offers 2000+ games to play and earn."
+    },
+    {
+      index: 6,
+      nameOfSite: "dutchy",
+      imageURL: "https://res.cloudinary.com/dsx2yofap/image/upload/v1690470926/dutchy_xkj7jf.jpg",
+      description:"Dutchy is a faucet that offers 2000+ games to play and earn."
+    },
+      // You can add more objects here to simulate more API data
   ];
+
   export default gamingData;
