@@ -7,6 +7,10 @@ import { Bounce, Reveal, Flip } from "react-awesome-reveal";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Faucets from "./Faucets";
+import Investment from "./Investment";
+import Gaming from "./Gaming";
+import Airdrops from "./Airdrops";
+import Exchanges from "./Exchanges";
 
 export default function Sites() {
   return (
@@ -26,23 +30,19 @@ export default function Sites() {
         </TabPanel>
 
         <TabPanel className="text-white">
-          <h2>
-          
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-            aperiam odit rem. Recusandae, quo ab ipsam at velit earum quasi
-            eveniet nostrum fuga atque alias laboriosam reprehenderit optio
-            veniam quae.
-          </h2>
+         <Investment/>
         </TabPanel>
 
         <TabPanel>
-          <h2>Any content 2</h2>
+          <Gaming/>
         </TabPanel>
+
         <TabPanel>
-          <h2>Airdrops</h2>
+          <Airdrops/>
         </TabPanel>
+
         <TabPanel>
-          <h2>Exchanges</h2>
+          <Exchanges/>
         </TabPanel>
         <TabPanel>
           <h2>Tutorials</h2>
